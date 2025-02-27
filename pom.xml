@@ -35,9 +35,9 @@
 					<armDeployment>
 						<muleVersion>${mule.version}</muleVersion>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<target>dev-op-server-4.8.1</target>
+						<target>${env.target}</target>
 						<targetType>server</targetType>
-						<environment>DEV</environment>
+						<environment>#{env.MULE_ENV}</environment>
 						<connectedAppClientId>dbb843f3ad2b4f7c8162647b35a202f9
 						</connectedAppClientId>
 						<connectedAppClientSecret>017355F2c05746A7bE70d04e4946C0A3
@@ -50,7 +50,15 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<distributionManagement>
+		<repository>
+			<id>anypoint-exchange-v3</id>
+			<name>Corporate Repository</name>
+			<url>
+		https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>

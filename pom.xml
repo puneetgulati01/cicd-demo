@@ -38,14 +38,14 @@
 						<target>${env.target}</target>
 						<targetType>server</targetType>
 						<environment>#{env.MULE_ENV}</environment>
-						<connectedAppClientId>dbb843f3ad2b4f7c8162647b35a202f9
-						</connectedAppClientId>
-						<connectedAppClientSecret>017355F2c05746A7bE70d04e4946C0A3
-						</connectedAppClientSecret>
-						<connectedAppGrantType>client_credentials
-						</connectedAppGrantType>
+<!-- 						<connectedAppClientId>dbb843f3ad2b4f7c8162647b35a202f9 -->
+<!-- 						</connectedAppClientId> -->
+<!-- 						<connectedAppClientSecret>017355F2c05746A7bE70d04e4946C0A3 -->
+<!-- 						</connectedAppClientSecret> -->
+<!-- 						<connectedAppGrantType>client_credentials -->
+<!-- 						</connectedAppGrantType> -->
 						<server>anypoint-exchange-v3</server>
-						<businessGroup>MIBPL</businessGroup>
+<!-- 						<businessGroup>MIBPL</businessGroup> -->
 					</armDeployment>
 				</configuration>
 			</plugin>

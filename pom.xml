@@ -44,6 +44,7 @@
 						</connectedAppClientSecret>
 						<connectedAppGrantType>client_credentials
 						</connectedAppGrantType>
+						<server>anypoint-exchange-v3</server>
 						<businessGroup>MIBPL</businessGroup>
 					</armDeployment>
 				</configuration>

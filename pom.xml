@@ -47,7 +47,7 @@
 <!-- 						<connectedAppGrantType>client_credentials -->
 <!-- 						</connectedAppGrantType> -->
 						<server>anypoint-exchange-v3</server>
-<!-- 						<businessGroup>MIBPL</businessGroup> -->
+						<businessGroupId>97f508cd-3646-40d0-8602-f8c7245adc2b</businessGroupId>
 					</armDeployment>
 				</configuration>
 			</plugin>

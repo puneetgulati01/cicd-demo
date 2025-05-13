@@ -33,14 +33,16 @@
 				<extensions>true</extensions>
 				<configuration>
 					<armDeployment>
-						<muleVersion>${mule.version}</muleVersion>
+						<muleVersion>${app.runtime}</muleVersion>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<target>${env.target}</target>
-						<targetType>server</targetType>
-						<environment>#{env.MULE_ENV}</environment>
-<!-- 						<connectedAppClientId>dbb843f3ad2b4f7c8162647b35a202f9 -->
+						<!-- <target>${env.target}</target> -->
+						<target>dev-op-server-4.8.1</target>
+						<targetType>cluster</targetType>
+						<!-- <environment>${env.MULE_ENV}</environment> -->
+						<environment>Dev</environment>
+<!-- 						<connectedAppClientId>8c7acfdac5b34a698393f0c8575db603 -->
 <!-- 						</connectedAppClientId> -->
-<!-- 						<connectedAppClientSecret>017355F2c05746A7bE70d04e4946C0A3 -->
+<!-- 						<connectedAppClientSecret>a7227b3afDC34E76AC0647676B88B81C -->
 <!-- 						</connectedAppClientSecret> -->
 <!-- 						<connectedAppGrantType>client_credentials -->
 <!-- 						</connectedAppGrantType> -->
@@ -100,6 +102,12 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
+		
+		  <pluginRepository>
+		    <id>mule-public</id>
+		    <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+		  </pluginRepository>
+		
 	</pluginRepositories>
 
 </project>

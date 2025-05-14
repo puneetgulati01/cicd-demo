@@ -6,7 +6,7 @@
 
 	<groupId>97f508cd-3646-40d0-8602-f8c7245adc2b</groupId>
 	<artifactId>cicd-demo</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>cicd-demo</name>
@@ -33,11 +33,11 @@
 				<extensions>true</extensions>
 				<configuration>
 					<armDeployment>
-						<muleVersion>${mule.version}</muleVersion>
+						<muleVersion>${app.runtime}</muleVersion>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<!-- <target>${env.target}</target> -->
 						<target>dev-op-server-4.8.1</target>
-						<targetType>cluster</targetType>
+						<targetType>server</targetType>
 						<!-- <environment>${env.MULE_ENV}</environment> -->
 						<environment>Dev</environment>
 <!-- 						<connectedAppClientId>8c7acfdac5b34a698393f0c8575db603 -->
